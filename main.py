@@ -2,17 +2,21 @@ import speech_recognition as sr
 import speak
 import chatbot as chat
 
+dochat = True #False to use voice recognition, True to use console to chat
+
 r = sr.Recognizer()
 with sr.Microphone() as source:
     while True:
         try:
-            #print("Werner hört zu!")
-            #audio = r.listen(source)
-            #input = r.recognize_google(audio, language="de-DE")
+            if dochat:
+                prompt = input(">")
+            else:
+                print("Werner hört zu!")
+                prompt = r.recognize_google(r.listen(source), language="de-DE")
 
-            response = chat.chat(input(">"))
+            response = chat.chat(prompt)
             print(response)
-            #speak.speakText(response)
+            speak.speakText(response)
 
         except sr.UnknownValueError:
             print("Google Speech Recognition could not understand audio")
