@@ -43,14 +43,18 @@
         "Servus",
         "Ist jemand da?",
         "Hallo",
-        "Hay"
+        "Hay",
+        "Hola"
       ],
       "responses": [
         "Hallo",
         "Hi",
-        "Hallo da",
+        "Wunderschoenen guten Tag",
+        "Moinsen Jungs und Jungsinnen",
+        "Halloele",
         "Servus",
-        "Ach moin"
+        "Guten Tag, Guten Tag!",
+        "Hola"
       ]
     },
     {
@@ -266,6 +270,74 @@
       "responses": [
         "Oke mach ich du fauler Sack<ROLLO_DOWN>",
         "Ja ihr Gruftis.<ROLLO_DOWN>"
+      ]
+    },
+    {
+      "tag": "Timer",
+      "patterns":[
+        "Stelle einen Timer",
+        "Timer auf Minuten",
+        "Stelle einen Timer auf Minuten"
+      ],
+      "responses": [
+        "Sicher doch. Dann musst du nicht auf die Uhr schauen<TIMER>",
+        "Oke mach ich<TIMER>"
+      ]
+    },
+    {
+      "tag": "VertretungMorgen",
+      "patterns":[
+        "Haben wir morgen Vertretung",
+        "Rufe die Vertretungen fuer morgen ab",
+        "Vertretungen morgen?",
+        "Ist morgen Vertretung?"
+      ],
+      "responses": [
+        "<VERTRETUNG_MORGEN>"
+      ]
+    },
+    {
+      "tag": "VertretungHeute",
+      "patterns":[
+        "Haben wir heute Vertretung",
+        "Rufe die Vertretungen fuer heute ab",
+        "Vertretungen heute?",
+        "Ist heute Vertretung?"
+      ],
+      "responses": [
+        "<VERTRETUNG_HEUTE>"
+      ]
+    },
+    {
+      "tag": "Andi",
+      "patterns":[
+        "Andi",
+        "Andi",
+        "Andi"
+      ],
+      "responses": [
+        "Andi Front",
+        "Andi Macht",
+        "Andi Bar",
+        "Andi Wand",
+        "Andi Waffen",
+        "Andi Luga",
+        "Andi Uschi",
+        "Andi Ostfront"
+      ]
+    },
+    {
+      "tag": "Klassensprecher",
+      "patterns":[
+        "Wer ist unser Klassensprecher?",
+        "Wer ist unser Klassenfuehrer?",
+        "Wer ist Klassensprecher?",
+        "Klassenfuehrer?",
+        "Klassensprecher?"
+      ],
+      "responses": [
+        "Klassenfuehrer sind Cedrick, Lennart und Philipp.",
+        "Klassensprecher sind Cedrick, Lennart und Philipp."
       ]
     },
     {
